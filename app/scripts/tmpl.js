@@ -2,7 +2,7 @@ App.prototype._getTemplate = function(id) {
   var tmpl = '<!DOCTYPE html>\
     <meta charset="utf-8">\
     <link rel="stylesheet" href="http://js.arcgis.com/3.14/esri/css/esri.css">\
-    <link rel="stylesheet" type="text/css" href="https://rawgit.com/benheb/legend/master/legend.css">\
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/esridc/legend/master/legend.css">\
     <title>Webmap created with Mundi</title>\
     <style>\
       #map {\
@@ -29,14 +29,14 @@ App.prototype._getTemplate = function(id) {
     </style>\
     <body>\
     <div id="map">\
-      <a id="mundi-link" href="http://benheb.github.io/mundi/?id='+id+'" target="_blank">View map in Mundi</a>\
+      <a id="mundi-link" href="http://esridc.github.io/mundi/?id='+id+'" target="_blank">View map in Mundi</a>\
       <div id="legend-container"></div>\
     </div>\
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>\
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>\
-    <script src="https://rawgit.com/benheb/legend/master/sortable.js"></script>\
+    <script src="https://rawgit.com/esridc/legend/master/sortable.js"></script>\
     <script src="http://js.arcgis.com/3.14/"></script>\
-    <script src="https://rawgit.com/benheb/legend/master/legend.js"></script>\
+    <script src="https://rawgit.com/esridc/legend/master/legend.js"></script>\
     <script>\
     require(["esri/map","esri/urlUtils","esri/arcgis/utils","esri/layers/FeatureLayer","esri/renderers/SimpleRenderer","esri/renderers/jsonUtils","dojo/domReady!"],\
       function(Map,urlUtils,arcgisUtils,FeatureLayer,SimpleRenderer,jsonUtils) {\
